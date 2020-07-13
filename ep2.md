@@ -8,5 +8,8 @@ But it's still morally bankrupt for Github to take this contract -- for an amoun
 
 We see you, Github. Special thanks to [Dave Copeland](https://twitter.com/davetron5000/status/1282738504624222208?s=20) for making me aware of this. Twitter is sometimes a beautiful thing.
 
+### Nick Craver talks Attacks on Stack Overflow.
+
+Stack Overflow, the largest* (that gets press) site built on ASP.NET MVC (and soon .NET Core), gets a lot of attacks against as a top 40 site on the internet.  Nick Craver, their architectural lead; goes deep into the sorts of attacks that happen. https://www.youtube.com/watch?v=K6NECAZhJG4 This is a good watch. Watch it.
 
 
