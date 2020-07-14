@@ -34,6 +34,9 @@ This is the sort of thing I get jazzed about.  The faster C# gets, the less we h
 
 Anyway, having an easy-to-use toolchain to write fast code is good for all of us; and really good for our economic prospects, if we're being honest.  The .NET team gets jazzed about performance too, and they've released another blog post [detailing speed improvements in the forthcoming (now in Preview) .NET 5](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/).  .NET 5, remember, is just .NET Core in a trench coat.  Microsoft is going directly from .NET Core 3 to .NET 5; because awkwardly, they already have a .NET 4.  I have lots of jokes to make about Microsoft Marketing, but I'd like to be clear about this: Microsoft has 20 years of inertia around the .NET Framework, and there were problem dozens of internal corporate teams that were hoping that .NET Core would fail because their bread and butter was built on .NET.  Luckily it didn't fail, and luckily the group that said "Let's unify the two" won.  Over time .NET Core has had to make concessions to stay in the game, like CSProj over project.json; but those concessions have ultimately scored large wins for both .NET Framework and .NET Core.  This is a narrow line to walk, and for all the grief I give them, Microsoft's Marketing team is handling this with grace and aplomb. 
 
+### BinaryFormatter will finally be tossed off a bridge
+
+https://github.com/dotnet/designs/pull/141
 
 ### ImageSharp passed 6 million downloads; and an exposure angel got their wings.
 
