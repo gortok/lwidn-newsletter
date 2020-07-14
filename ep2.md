@@ -10,7 +10,7 @@ We see you, Github. Special thanks to [Dave Copeland](https://twitter.com/davetr
 
 ### Nick Craver talks Attacks on Stack Overflow.
 
-Stack Overflow, the largest* (that gets press) site built on ASP.NET MVC (and soon .NET Core), gets a lot of attacks against as a top 40 site on the internet.  Nick Craver, their architectural lead; goes deep into the sorts of attacks that happen. https://www.youtube.com/watch?v=K6NECAZhJG4 This is a good watch. Watch it.
+Stack Overflow, the largest (that gets developer press and isn't Microsoft owned) site built on ASP.NET MVC (and soon .NET Core), gets a lot of attacks against it as a "top 50" (according to Wikipedia) site on the internet.  Nick Craver, their architectural lead; goes deep into the sorts of attacks that happen. https://www.youtube.com/watch?v=K6NECAZhJG4 This is a good watch. Watch it.
 
 ### Performance Improvements in .NET 5
 
@@ -22,7 +22,7 @@ Anyway, having an easy-to-use toolchain to write fast code is good for all of us
 
 ### PFCLotW (Pretty Fricking Cool Library of the Week)
 
-If you're using .NET Core, and you want to benchmark your code, you should be using [Benchmark.NET]().  It's called Benchmark because that's what it does, and they slapped the .NET moniker on the end because that's what library authors for .NET Do.  Since this is .NET, their alternatives were NBenchmark, and BenchmarkSharp. I'm glad Benchmark.NET won.
+If you're using .NET (Whether Framework or Core), and you want to benchmark your code, you should be using [Benchmark.NET](https://github.com/dotnet/BenchmarkDotNet).  It's called Benchmark because that's what it does, and they slapped the .NET moniker on the end because that's what library authors for .NET Do.  Since this is .NET, their alternatives were NBenchmark, and BenchmarkSharp. I'm glad Benchmark.NET won.
 
 Anyway, Benchmark.NET let's you set up runs against your code; specifically against doing the same operation multiple ways. It then accurately benchmarks how fast the code is, what sort of memory usage it has, and a few other neat sundries about it.  
 
