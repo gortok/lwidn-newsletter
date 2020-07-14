@@ -16,6 +16,11 @@ If you are running Visual Studio 16.4, you need to update SDK to 3.1.106; if you
 
 If you use Windows DNS Server, there's another [RCE vulnerability that is apparently "wormable"](https://msrc-blog.microsoft.com/2020/07/14/july-2020-security-update-cve-2020-1350-vulnerability-in-windows-domain-name-system-dns-server/), but [at least some infosec people seem to think it won't turn into a big problem](https://twitter.com/hackerfantastic/status/1283096226616016896?s=20).  This being 2020, I'm not holding my breath.
 
+
+### .NET Core 2.1.20 has been released
+
+Release Notes: https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1.20/2.1.20.md
+
 ### Self Contained Applications
 
 One of the more interesting parts of .NET Core has become the "Self Contained Application" -> effectively the runtime, the application and its dependencies in one package. This is great for datacenter style deployments or cross platform console applications, or even potentially in .NET 6 with MAUI: Desktop applications.  That same advantage of self-contained applications is also a disadvantage, as foretold in this note in the Announcement: 
