@@ -8,6 +8,27 @@ But it's still morally bankrupt for Github to take this contract -- for an amoun
 
 We see you, Github. Special thanks to [Dave Copeland](https://twitter.com/davetron5000/status/1282738504624222208?s=20) for making me aware of this. Twitter is sometimes a beautiful thing.
 
+### Vulnerabilities reported this week
+
+Microsoft reported and [released a fix](https://github.com/dotnet/announcements/issues/159) for CVE-2020-1147, a .NET Core Remote Code Execution Vulnerability. If you accept XML input, this advisory affects you.  If any of your API endpoints accept XML, this advisory affects you. .NET Core 2.1.19, .NET 3.1.5, and .NET 5 Preview 6 are all vulnerable. This is fixed in the latest version of .NET Core 3.1.6, and will hopefully be fixed when .NET 5 Preview 7 is released. 
+
+If you are running Visual Studio 16.4, you need to update SDK to 3.1.106; if you're running Visual studio 2019 16.5 or later, update to SDK 3.1.302 and then curse version numbers loudly like I'm about to.
+
+If you use Windows DNS Server, there's another [RCE vulnerability that is apparently "wormable"](https://msrc-blog.microsoft.com/2020/07/14/july-2020-security-update-cve-2020-1350-vulnerability-in-windows-domain-name-system-dns-server/), but [at least some infosec people seem to think it won't turn into a big problem](https://twitter.com/hackerfantastic/status/1283096226616016896?s=20).  This being 2020, I'm not holding my breath.
+
+
+### .NET Core 2.1.20 has been released
+
+Release Notes: https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1.20/2.1.20.md
+
+### Self Contained Applications
+
+One of the more interesting parts of .NET Core has become the "Self Contained Application" -> effectively the runtime, the application and its dependencies in one package. This is great for datacenter style deployments or cross platform console applications, or even potentially in .NET 6 with MAUI: Desktop applications.  That same advantage of self-contained applications is also a disadvantage, as foretold in this note in the Announcement: 
+
+> Additionally, if you've deployed self-contained applications targeting any of the impacted versions, these applications are also vulnerable and must be recompiled and  redeployed.
+
+Long story short: Not only do you need an update story for your organization's release cadence, that cadence must also take into account vulnerabilities in the runtime.
+
 ### Nick Craver talks Attacks on Stack Overflow.
 
 Stack Overflow, the largest (that gets developer press and isn't Microsoft owned) site built on ASP.NET MVC (and soon .NET Core), gets a lot of attacks against it as a "top 50" (according to Wikipedia) site on the internet.  Nick Craver, their architectural lead; goes deep into the sorts of attacks that happen. https://www.youtube.com/watch?v=K6NECAZhJG4 This is a good watch. Watch it.
@@ -17,6 +38,17 @@ Stack Overflow, the largest (that gets developer press and isn't Microsoft owned
 This is the sort of thing I get jazzed about.  The faster C# gets, the less we have to worry about using a language like Go or Rust for high performance situations.  I don't use Rust, but anyone that does will tell you within seconds of meeting you.  They're our Crossfitters.
 
 Anyway, having an easy-to-use toolchain to write fast code is good for all of us; and really good for our economic prospects, if we're being honest.  The .NET team gets jazzed about performance too, and they've released another blog post [detailing speed improvements in the forthcoming (now in Preview) .NET 5](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/).  .NET 5, remember, is just .NET Core in a trench coat.  Microsoft is going directly from .NET Core 3 to .NET 5; because awkwardly, they already have a .NET 4.  I have lots of jokes to make about Microsoft Marketing, but I'd like to be clear about this: Microsoft has 20 years of inertia around the .NET Framework, and there were problem dozens of internal corporate teams that were hoping that .NET Core would fail because their bread and butter was built on .NET.  Luckily it didn't fail, and luckily the group that said "Let's unify the two" won.  Over time .NET Core has had to make concessions to stay in the game, like CSProj over project.json; but those concessions have ultimately scored large wins for both .NET Framework and .NET Core.  This is a narrow line to walk, and for all the grief I give them, Microsoft's Marketing team is handling this with grace and aplomb. 
+
+### BinaryFormatter will finally be tossed off a bridge
+
+https://github.com/dotnet/designs/pull/141
+
+### ImageSharp passed 6 million downloads; and an exposure angel got their wings.
+
+The creator of ImageSharp https://twitter.com/James_M_South/status/1282396639714373632 laments getting six million downloads on an open source project that obstensibly does not pay the bills.  At this point in OSS, you either go APGL or you get to the point where you wish you had.
+
+
+
 
 ### On .NET MAUI
 
