@@ -10,8 +10,4 @@
     <PackageReference Include="Statiq.Markdown" Version="1.0.0-beta.17" />
     <PackageReference Include="Statiq.Web" Version="1.0.0-alpha.21" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="input\" />
-  </ItemGroup>
 </Project>
