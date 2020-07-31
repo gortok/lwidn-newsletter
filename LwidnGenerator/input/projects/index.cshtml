@@ -1,0 +1,106 @@
+---
+title: .NET Foundation Projects
+description: Projects and the people behind them are at the heart of what .NET Foundation is all about. These days, you’ll find a wide variety of projects, including the .NET Compiler Platform, ASP.NET, .NET Core, and Xamarin Forms, along with the popular .NET open-source frameworks xUnit and Reactive Extensions.
+permalink: /projects
+---
+
+<section class="page-section page-section--purple">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+          <div class="page-section_column col-12 text-center">
+            <h1>
+              .NET Foundation Projects
+            </h1>
+            <div id="foundation-description">
+              <p class="mx-auto">
+                Projects—and the people behind them—are at the heart of what .NET Foundation is all about. These days, you’ll find a wide variety of projects, including the .NET Compiler Platform, ASP.NET, .NET Core, and Xamarin Forms, along with the popular .NET open-source frameworks xUnit and Reactive Extensions.
+              </p>
+              <p class="mx-auto">
+                Can you contribute to something already in the works? Browse our projects below to find out how to contribute!
+              </p>
+              <p class="mx-auto">
+                Of course, we’re always on the lookout for new open-source projects to support.
+              </p>
+            </div>
+            <div class="container" id="search">
+              <div class="row">
+                <div class="form-group col-lg-6 col-md-10 offset-lg-3 offset-md-1">
+                  <div class="input-group">
+                    <input class="form-control" id="textToSearch" name="textToSearch" type="search" value=""
+                          placeholder="" />
+                    <button id="search-projects" class="btn btn-primary mb-2"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row sr-only">
+                <div class="form-group">
+                  <label>
+                    <input id="type" name="type" type="radio" value="project" checked /> Projects
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input id="type" name="type" type="radio" value="repository" /> Repositories
+                  </label>
+                </div>
+              </div>
+            </div>
+            <a id="submit-button" class="site-button site-button--pink" href="/projects/submit" aria-label="Submit A Project">
+              Submit A Project
+            </a>
+            <div id="search-description"></div>
+            <button id="back-button" class="site-button site-button--pink"><i class="fa fa-angle-left" style="margin-right: 10px"></i>Back to index</button>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="page-section_container container">
+        <div class="page-section_row row text-left">
+            <div class="page-section_column col-12">
+                <div id="SearchResults"></div>
+                <div id="PresetProjects">
+                    @{
+                        var list = Outputs[nameof(Statiq.Web.Pipelines.Content)]
+                                       .Flatten()
+                                       .FilterSources("projects/data/*.md")   
+                                       .Where(doc => !string.IsNullOrWhiteSpace(doc.GetTitle()) && Convert.ToBoolean(doc.GetValueOrDefault("IsActive", true)) == true)
+                                       .GroupBy(doc => char.IsLetter(doc.GetTitle().ToUpperInvariant().First()) ? doc.GetTitle().ToUpperInvariant().First() : '#' )
+                                       .OrderBy(g => g.Key)
+                                       .ToList();
+                        
+                        var start = 0;
+                    }
+                    @while (start < list.Count)
+                    {
+                    <div class="row">
+                        @foreach (var letterGroup in list.Skip(start).Take(3))
+                        {
+                            <div class="col-lg-4 col-sm-12 alph">
+                                <hr />
+                                <div class="alph-box">
+                                    <div class="letter">@letterGroup.Key</div>
+                                    <div class="list">
+                                        @foreach(var proj in letterGroup.OrderBy(p => p.GetTitle()))
+                                        {
+                                        <a class="project-item" data-project="@proj.GetTitle()" href="@proj.GetLink()">@proj.GetTitle()</a>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+
+                            start += 3;
+                        }
+                </div>
+                <div id="PresetPagination">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/projects.js"></script>

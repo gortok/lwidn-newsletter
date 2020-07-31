@@ -1,0 +1,15 @@
+{ 
+  "ShouldOutput": true,
+  "routes": [ 
+    {
+      "route": "/code-of-conduct",
+      "serve": "/about/code-of-conduct",
+      "statusCode": 301
+    },
+    {
+      "route": "/blog/welcomeworldwidetelescope",
+      "serve": "/blog/2015/07/02/welcomeworldwidetelescope",
+      "statusCode": 301
+    }
+  ]
+} 

@@ -1,0 +1,59 @@
+---
+title: .NET Foundation Board Member Elections
+permalink: about/election
+---
+@Html.Partial("../../_partials/_elections-banner")
+
+<section class="page-section">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+            <div class="col-12">
+                <h1 style="text-align:center" id="your.net-foundation">.NET Foundation Board Elections</h1>
+                <p>
+                    Last year the .NET Foundation expanded the <a href="/about/board-of-directors">Board of Directors</a>
+                    from three to seven members, with one single seat appointed by Microsoft and the remaining six elected by the community.
+                    This structure has helped the .NET Foundation scale and better serve the .NET ecosystem.
+                </p>
+                <p>
+                    We are preparing for our next set of Board elections and some changes are being made to the way we conduct these elections.
+                    Namely, a Nominating Committee has been formed that will solicit and accept candidate applications and vet potential candidates that will then be voted on by members.
+                    This committee was formed by the Board of Directors.
+                    Additionally, we will begin term staggering of Board members to enhance the continuity of the organization. 
+                    Please see the <a href="/about/election/policy">Election Policy</a> for more details. 
+                </p>
+                <h3 style="text-align: center;" >The Nominating Committee members are</h3>
+                <p style="text-align: center;" >
+                    <div class="row">
+                        @Html.Partial("../../_partials/_team-member-card.cshtml",
+                            Outputs[nameof(Statiq.Web.Pipelines.Content)]
+                                .Flatten()
+                                .FilterSources("about/election/nomination-committee-2020/*.md")
+                                .OrderBy(candidate => candidate.GetInt("order"))
+                                .ThenBy(candidate => candidate.GetString("title"))
+                        )
+                    </div>
+                </p>
+
+                <p>
+                    If you are interseted in running, fill out a nomination form <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=3G8HFsH8FUqxyjLJolWQDtxAVwyU3HJJo4I9O9ugmk9UMzVFWFIyRlhMV1pBTVlBMFIzWTM0UzRMSS4u" target="_blank">here</a>. The nomination form will be open until June 26th.
+                </p>
+
+                <h2 id="what-does-the.net-foundation-board-do">What does the .NET Foundation Board Do?</h2>
+                <p>The board completely runs the .NET Foundation. They decide how the money is spent, what projects join the foundation, what the Executive Director does, what programs the foundation will run or be involved with, what events we’ll sponsor. The board runs the foundation.</p>
+
+                <h2 id="how-do-campaigns-and-elections-work">How Do Elections Work?</h2>
+                <ul>
+                    <li>.NET Foundation Voting Members are eligible to both vote in the election and run for a board seat. If you're not a member yet, <a href="member/become-a-member">join today!</a></li>
+                    <li>The Nominating Committee will present the candidates to Voting Members on July 7.</li>
+                    <li>The campaign period runs from July 7 - July 21, followed by a two week election which will conclude on August 3 at 12 PM Pacific time.</li>
+                    <li>Voting Members will cast their votes using the <a href="https://www.opavote.com/methods/single-transferable-vote">Single Transferable Vote methodology on the OpaVote system</a>.</li>
+                    <li>Results will be communicated no later than August 4 at 12 PM Pacific time.</li>
+                    <li>To keep informed, follow us on Twitter at <a href="https://twitter.com/dotnetfdn">&#64;dotnetfdn</a>... or better yet, <a href="http://eepurl.com/dhL_qb">subscribe to our newsletter!</a></li>
+                </ul>
+                <p>Interested in running for a seat? Watch for our next blog post with specifics on the elections process, and feel free to ping us at <a href="mailto:contact@dotnetfoundation.org">contact@dotnetfoundation.org</a> with questions.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,224 +1,171 @@
-﻿Order: 0
-ArchiveSources: "newsletter/*"
-ArchiveDestination: >= GetInt("Index") <= 1 ? "Title: Last Week in .NET
-NoContainer: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Blog - Tailsaw </title>
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.2/css/bulma.min.css" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/bulma-divider.min.css">
-
-  <style>
-	nav.navbar {
-	height: 6rem !important;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
-	}
-  </style>
-</head>
-
-<body>
-  <!-- START NAV -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="../">
-          <img src="../images/bulma.png" alt="Logo">
-        </a>
-        <span class="navbar-burger burger" data-target="navbarMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenu" class="navbar-menu">
-        <div class="navbar-end">
-          <div class=" navbar-item">
-            <div class="control has-icons-left">
-              <input class="input is-rounded" type="email" placeholder="Search">
-              <span class="icon is-left">
-                <i class="fa fa-search"></i>
-              </span>
-            </div>
-          </div>
-          <a class="navbar-item is-active is-size-5 has-text-weight-semibold">
-            Home
-          </a>
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
-            Examples
-          </a>
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
-            Features
-          </a>
+title: .NET Foundation
+description: You've found the heartbeat of .NET - where projects and communities come together to get things done in our open-source world. Share your skills for the greater good. Meet in person, get involved virtually, and stay on top of the latest news, meetups, and events.
+isHome: true
+---
+<section id="home-hero">
+    <div id="home-hero_container" class="container-fluid d-flex justify-content-center position-relative">
+        <div id="home-hero_overlay" class="position-absolute"></div>
+        <div id="home-hero_content" class="position-relative">
+            <h2 id="home-hero_title">Independent. Innovative. Always open source.</h2>
+            <p id="home-hero_copy" class="mx-auto">
+                The .NET Foundation is an independent, non-profit organization established to support an innovative, commercially friendly, open-source ecosystem around the .NET platform.
+            </p>
         </div>
-      </div>
     </div>
-  </nav>
-  <!-- END NAV -->
-  <!-- Image -->
-  <section class="hero ">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8 is-offset-2">
-            <figure class="image is-16by9">
-              <img src="../images/first-post.png" alt="">
-            </figure>
-          </div>
+</section>
+
+<section class="page-section">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+            <div class="page-section_column col-12 text-center">
+                <h2>How we support the community?</h2>
+            </div>
         </div>
-
-        <section class="section">
-          <div class="columns">
-            <div class="column is-8 is-offset-2">
-              <div class="content is-medium">
-                <h2 class="subtitle is-4">December 25, 2018</h2>
-                <h1 class="title">Getting Started</h1>
-                <p>
-                  This is a starter template for creating a beautiful, customizable blog with minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config
+        <div class="page-section_row row">
+            <div class="page-section_column page-section_column--narrow col-md-4 pad-fix--all text-center">
+                <img src="img/comp.png" alt="Open Source Projects" class="community-image">
+                <h3>Open Source Projects</h3>
+                <p style="min-height: 145px">
+                    The .NET Foundation provides several services to support the open source projects in our community and help them grow.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="is-divider"></div>
-
-        <section class="section">
-          <div class="columns">
-            <div class="column is-8 is-offset-2">
-              <div class="content is-medium">
-                <h2 class="subtitle is-4">December 25, 2018</h2>
-                <h1 class="title">Getting Started</h1>
-                <p>
-                  This is a starter template for creating a beautiful, customizable blog with minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- newsletter -->
-  <section class="section">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="container has-text-centered is-fluid">
-          <div class="hero is-light">
-            <div class="hero-body">
-              <h2 class="title is-4">
-                Sign up for our newsletter</h1>
-                <div class="column is-6 is-offset-3">
-                  <div class="field has-addons has-addons-centered">
-                    <div class="control is-expanded">
-                      <input class="input " type="text" placeholder="Email address">
-                    </div>
-                    <div class="control">
-                      <a class="button is-info">
-                        Subscribe
-                      </a>
-                    </div>
-                  </div>
+                <div class="site-button_row">
+                    <a class="site-button site-button--pink" href="/projects">Find out more</a>
                 </div>
             </div>
-          </div>
+            <div class="page-section_column page-section_column--narrow col-md-4 pad-fix--all text-center">
+                <img src="img/globe_icon.png" alt="Community" class="community-image">
+                <h3>Community</h3>
+                <p style="min-height: 145px">
+                  We work not only with Microsoft, but with the broader industry to increase exposure of .NET's capabilities. All our resources are designed to support developers and your projects, and help promote your endeavors with like-minded folks!
+                </p>
+                <div class="site-button_row">
+                    <a class="site-button site-button--pink" href="/community">Find out more</a>
+                </div>
+            </div>
+            <div class="page-section_column page-section_column--narrow col-md-4 pad-fix--all text-center">
+                <img src="img/Icon-Resources.svg" alt="Resources" class="community-image">
+                <h3>Resources</h3>
+                <p style="min-height: 145px">
+                    The foundation also lists a number of presentations, workshops, e-books and tutorials from the community.
+                </p>
+                <div class="site-button_row">
+                    <a class="site-button site-button--pink" href="/community/resources">Find out more</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-
-  <!-- Articles -->
-
-  <section class="hero ">
-    <div class="hero-body">
-      <div class="container">
-
-        <section class="section">
-          <div class="columns is-variable is-8">
-            <div class="column is-5 is-offset-1 ">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 23, 2018</h2>
-                <h1 class="title has-text-black is-3">Custom 404 Pages</h1>
-                <p class="has-text-dark">
-                  This starter template includes a custom 404 Not Found error page, located at
-                  /source/404.blade.php.
-                  To preview the 404 page, you can visit /404 in your browser. Depending...
-                </p>
-              </div>
+</section>
+<section class="page-section page-section--purple--light">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+            <div class="page-section_column col-lg-3 col-sm-6">
+                <div class="icon-box animated icon-box--grey animation-delay--8 d-flex flex-column align-items-center" data-delay="900">
+                    <div class="icon-box_stat">
+                        <span class="counter">@DotnetFoundationWeb.AppSettings.ContributionsCounter</span><span class="icon-plus" style="display:none">+</span>
+                    </div>
+                    <div class="icon-box_icon">
+                        <img src="img/developers_icon.png" alt="Contributions">
+                    </div>
+                    <div class="icon-box_label">
+                        Contributions
+                    </div>
+                </div>
             </div>
-            <div class="column is-5">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                <h1 class="title has-text-black is-3">Fuse Search</h1>
-                <p class="has-text-dark">
-                  To provide fast, local search of your blog, this starter template comes with a
-                  pre-built Vue.js
-                  component that uses Fuse.js. Fuse.js is a "lightweight fuzzy-search library with no...
-                </p>
-              </div>
+            <div class="page-section_column col-lg-3 col-sm-6 pad-fix--sm">
+                <div class="icon-box animated icon-box--grey animation-delay--2 d-flex flex-column align-items-center" data-delay="300">
+                    <div class="icon-box_stat">
+                        <span class="counter">@DotnetFoundationWeb.AppSettings.CompaniesCounter</span><span class="icon-plus" style="display:none">+</span>
+                    </div>
+                    <div class="icon-box_icon">
+                        <img src="img/building_icon.png" alt="Companies">
+                    </div>
+                    <div class="icon-box_label">
+                        Companies
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
-
-        <div class="is-divider"></div>
-
-        <section class="section">
-          <div class="columns is-variable is-8">
-            <div class="column is-5 is-offset-1">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                <h1 class="title has-text-black is-3">Getting Started</h1>
-                <p class="has-text-dark">
-                  This is a starter template for creating a beautiful, customizable blog with
-                  minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config
-                </p>
-              </div>
+            <div class="page-section_column col-lg-3 col-sm-6 pad-fix--lg">
+                <div class="icon-box animated icon-box--grey animation-delay--4 d-flex flex-column align-items-center" data-delay="500">
+                    <div class="icon-box_stat counter">
+                        @DotnetFoundationWeb.AppSettings.ActiveProjectsCounter
+                    </div>
+                    <div class="icon-box_icon">
+                        <img src="img/member_projects_icon.png" alt="Active Projects">
+                    </div>
+                    <div class="icon-box_label">
+                        Active Projects
+                    </div>
+                </div>
             </div>
-            <div class="column is-5">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                <h1 class="title has-text-black is-3">Getting Started</h1>
-                <p class="has-text-dark">
-                  This is a starter template for creating a beautiful, customizable blog with
-                  minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config
-                </p>
-              </div>
+            <div class="page-section_column col-lg-3 col-sm-6 pad-fix--lg">
+                <div class="icon-box animated icon-box--grey animation-delay--6 d-flex flex-column align-items-center" data-delay="700">
+                    <div class="icon-box_stat counter">
+                        @DotnetFoundationWeb.AppSettings.ResourcesCounter
+                    </div>
+                    <div class="icon-box_icon">
+                        <img src="img/github_icon.png" alt="Resources">
+                    </div>
+                    <div class="icon-box_label">
+                        Resources
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
-
-
-      </div>
+        </div>
     </div>
-  </section>
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma - Blog theme</strong> by <a href="https://gonzalojs.com">Gonzalo Gutierrez</a>. Based on the <a href="http://jigsaw-blog-staging.tighten.co/">jigsaw-blog</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-      </p>
+</section>
+<section class="page-section">
+    <div class="page-section_container container">
+        <div class="page-section_row row" style="align-items: center" id="PresetFeaturedProject">
+        </div>
     </div>
-  </footer>
-
-</body>
-
-</html>
+    <div style="height: 3rem;"></div>
+    <div id="home-featured-project_overlay"></div>
+</section>
+<section class="page-section page-section--purple--light">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+            <div class="page-section_column col-lg-12">
+                <h2>Upcoming Events and Meetups</h2>
+                <div id="PresetEvents"></div>
+                <p class="">
+                    <a class="link_title" href="https://meetup.com/pro/dotnet">Find more events and Meetups ></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+            <div class="page-section_column col-lg-12">
+                <h2>Latest News and <a href="/blog" aria-label="blog">Blog</a></h2>
+                @Html.Partial("_partials/_blog-card.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
+                        .Flatten()
+                        .FilterSources("blog/posts/*")
+                        .OrderByDescending(doc => doc.GetDateTime("Published"))
+                        .Take(5))
+                <p class="">
+                    <a class="link_title" href="news">Get more news</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section page-section--purple--light" id="corporate-sponsors">
+    <div class="page-section_container container">
+        <div class="page-section_row row">
+            <div class="page-section_column col-lg-12">
+                <h2>Corporate Sponsors</h2>
+                <p>These companies are helping drive the future of .NET. </p>
+                <div class="corporate-sponsor-card-container">
+                    @Html.Partial("_partials/_corporate-sponsor-logo-card.cshtml", Outputs[nameof(Statiq.Web.Pipelines.Content)]
+                      .Flatten()
+                      .FilterSources("corporate-sponsors/*.md")
+                      .OrderBy(sponsor => sponsor.GetInt("order"))
+                      )
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

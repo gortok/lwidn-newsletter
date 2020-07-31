@@ -1,0 +1,52 @@
+@inherits Statiq.Razor.StatiqRazorPage<IEnumerable<IDocument>>
+
+@foreach (IDocument item in Model)
+{
+    @if (!String.IsNullOrEmpty(item.GetString("title")))
+    {
+    <div class="committee_container">
+      <div class="committee_meta d-flex flex-column justify-content-center">
+        <h2>@item.GetString("title")</h2>
+        <p class="latest_copy">@Html.Raw(item.GetString("Description"))</p>
+        @if (!String.IsNullOrEmpty(item.GetString("Chairperson")))
+        {
+            <div class="committee_img_container d-md-none text-center">
+             @if (!String.IsNullOrEmpty(item.GetString("Image")))
+              {
+                <img src="@item.GetString("image")" alt="@item.GetString("title")"/>
+              }
+              else
+              {
+                <img src="img/dot_bot.png" alt="Default Dot Bot Image"/>
+              }
+            </div>        
+          <p class="latest_copy">
+            Chairperson: @item.GetString("Chairperson")
+          </p>
+        }
+        @if (!String.IsNullOrEmpty(item.GetString("Meets")))
+        {
+          <p class="latest_copy">
+            Meets: @item.GetString("Meets")
+          </p>
+        }
+        @if (!String.IsNullOrEmpty(item.GetString("Repository")))
+        {
+          <p class="latest_copy">
+            Repository: <a href="@item.GetString("Repository")">@item.GetString("Repository")</a>
+          </p>
+        }
+      </div>
+      <div class="committee_img_container align-items-center justify-content-center d-none d-md-flex">
+          @if (!String.IsNullOrEmpty(item.GetString("Image")))
+          {
+            <img src="@item.GetString("image")" alt="@item.GetString("title")"/>
+          }
+          else
+          {
+            <img src="img/dot_bot.png" alt="Default Dot Bot Image"/>
+          }
+      </div>
+    </div>
+    }
+}
