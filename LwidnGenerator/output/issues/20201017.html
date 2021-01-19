@@ -1,0 +1,35 @@
+<p>This is Last Week in .NET for the week that ended 17 October 2020. Lots of releases and CVE fixes last week, so let's get to it.</p>
+<p>📢  <a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0-rc-2/">.NET 5 RC2 has been released</a>. I mentioned last week that RC 1 was probably the last RC until GA, and I was wrong. I won't pundit on that any more, I have, in fact, learned my lesson. ClickOnce makes an appearance, and there are several smaller updates in this release.</p>
+<p>📢  <a href="https://github.com/dotnet/core/releases/tag/v3.1.9">.NET Core 3.1.9 has been released</a>. This release includes bugfixes across the runtime, framework, and ASP.NET Core <a href="https://devblogs.microsoft.com/dotnet/net-core-october-2020/">as well as support for Fedora 33 and Ubuntu 20.10</a></p>
+<p>📢  <a href="https://github.com/dotnet/core/releases/tag/v2.1.23">.NET Core 2.1.23 has been released</a> Much like its hotter younger brother 3.1.9, 2.1.23 has bugfixes and updates for the runtime as well as the same aforementioned support for new releases of Fedora and Ubuntu.</p>
+<p>📢  <a href="https://blogs.windows.com/windowsdeveloper/2020/10/13/c-winrt-version-0-8-and-the-net5-rc2-release/">WinRT 0.8 has been released</a> This has to do with using C# with WinRT, and at this point with the number of fluctuations to the Windows UI story, I'm not sure what the hell this does or who's it for.</p>
+<p>🚨 https://www.bleepingcomputer.com/news/security/microsoft-october-2020-patch-tuesday-fixes-87-security-bugs/  That's a lot. So much so that the list of CVEs in this Patch Tuesday is itself too long to talk about.</p>
+<p>The patches and CVE fixes cover the following software:</p>
+<ul>
+<li>Microsoft Windows</li>
+<li>Microsoft Office and Microsoft Office Services and Web Apps</li>
+<li>Microsoft JET Database Engine</li>
+<li>Azure Functions</li>
+<li>Open Source Software (yes, they actually wrote &quot;Open Source Software&quot;)</li>
+<li>Microsoft Exchange Server</li>
+<li>Visual Studio</li>
+<li>PowerShellGet</li>
+<li>Microsoft .NET Framework (There we are!)</li>
+<li>Microsoft Dynamics</li>
+<li>Adobe Flash Player</li>
+<li>Microsoft Windows Codecs Library</li>
+</ul>
+<p>🚨 Microsoft also patched <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-16898">CVE-2020-16898</a>, which allowed someone to use a malformed IPV6 ICMP Packet to... take over a system?!?!?!</p>
+<p>✉️ .NET Foundation September/October 2020 update [https://dotnetfoundation.org/blog/2020/10/14/blog/posts/net-foundation-september-october-2020-update](.NET Foundation join's OSI's affiliate initiative; new .NET projects are showcased).<br />
+🎥 <a href="https://dotnet.microsoft.com/live">Microsoft releases .NET Live TV!</a> (Not to be confused with Microsoft's &quot;Live&quot; product).  The goal is to have &quot;Netflix for .NET&quot; There's a lot of production to put into a 'live' TV channel, and if anyone can do it, Microsoft can.  I just wish they'd use that money to pay the OSS maintainers whose projects they copy.<br />
+🎥  <a href="https://twitter.com/ch9/status/1316821655713312768">Speaking of Microsoft Live TV. Channel 9 released another video in a series of Progressive Web Applications with Blazor</a>.
+🐦 <a href="https://twitter.com/LyalinDotCom/status/1316083479306670081">Part of the release for .NET 5 RC2 is the ability to use ClickOnce deployment with .NET 5</a>.  As the tweet says, &quot;This is huge&quot; and I'm only hoping it works out better this time.  In the teams I've been a part of, there was always a reason why ClickOnce wouldn't work; but maybe that's all been fixed?<br />
+🎥  <a href="https://www.youtube.com/watch?v=HTwY7_U4it0&amp;feature=emb_title">How does .NET 5 change my development?</a> Immo Landwerth of the .NET team takes the time to answer that question in a whole minute and 25 seconds.  Just a little more shaving and you can get it into a TikTok. Brb, starting a tiktok for .NET.<br />
+🎥  <a href="https://www.youtube.com/watch?v=A_y1gIzzRT8">Immo Landwerth takes you through how .NET 5's compatibility analyzer works</a> when trying to work with cross platform code. If you get &quot;PlatformNotSupported&quot; Exceptions, this video is for you.</p>
+<p>🚨: Microsoft republished a fix for <a href="https://devblogs.microsoft.com/dotnet/net-framework-republishing-of-july-2020-security-only-updates/">CVE-2020-1147</a> because it was breaking <a href="https://support.microsoft.com/en-us/help/4576575/execution-of-sql-server-clr-fails-with-typeinitializationexception">SQL CLR objects</a>. They didn't find it sooner because there are about five people in the known universe that use SQL CLR Objects.  Thoughts and Prayers.</p>
+<p>💰: Octopus Deploy is now a <a href="https://octopus.com/blog/dotnet-foundation">corporate sponsor for the .NET Foundation</a>. This is a big change from 8 months ago when <a href="https://paulstovell.com/re-next-decade-of-open-source/">Octopus Deploy cut ties with Microsoft</a>, and both blog posts are by the same person, Paul Stovall, Founder of Octopus Deploy.</p>
+<p>In the post, Paul details that they want to help change the trajectory of .NET Open Source by funding it, and for that I commend them.  It seems like they want to try to 'change things from the inside', and maybe they'll be able to. Regardless, thank you, Paul, and thank you Octopus Deploy.</p>
+<p>🐦 Kevin Jones (aka &#64;vcsjones on Twitter) <a href="https://twitter.com/vcsjones/status/1315686106441166848">showed an open issue in .NET where misusing <code>stackalloc</code> for a dynamically bounded array could cause a Stack Overflow in .NET</a>.  This is fixed in the &quot;master&quot; branch for the .NET Repo (can we get a branch name change, Microsoft), and maybe we'll see a .NET 5 RC3 or maybe this will just be in the GA version.</p>
+<p>📝 <a href="https://paynekaren.blogspot.com/2020/10/vbnet-working-with-delegate-and-events.html">Karen Payne released a blog post on how to work with Delegates and Events in VB.NET</a>. It's wonderful to see people blog about VB.NET, and we need more of that.  It's a wonderful language in its own right. Thanks, Karen.</p>
+<p>📅 <a href="https://www.dotnetconf.net/">.NET Conf</a> (yes, the correctly spelled one) is November 10th-12th) Are you 'going'? If not, I'll be livetweeting it &#64;gortok on twitter. You know where the mute button is.</p>
+<p>It was a pretty busy week for the world of .NET. I'm George Stocker, and I help teams write .NET systems that are easy to maintain and improve. If you're interested in learning more, check out www.doubleyourproductivity.io.</p>

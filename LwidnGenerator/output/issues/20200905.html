@@ -1,0 +1,32 @@
+<h3>.NET Framework September 3, 2020 Cumulative Update Preview for Windows 10 (2004) and Windows Server (2004) is now available:</h3>
+<p>WPF now will not consider 'etc.' and 'e.g.' misspellings in the WPF Textbox or the RichTextBox, so they've finally entered the 20th century. Congrats?</p>
+<p>Also they fixed a bug with cleaning up something or some other with the CLR. I'm gonna copy/paste this because it's word salad to me, but if you have to deal with this on a day-to-day basis, it looks like they fixed 'it' (whatever 'it' is):</p>
+<blockquote>
+<p>– Addresses an issue with a crash on COM interop to properly return the hresult for the Out of Memory Exception
+– Addresses an issue in some 32 bit apps where, in certain scenarios, the JIT might omit a function call
+– Improved support for cleaning up private temporary certificate keys</p>
+</blockquote>
+<h3>Some more editor goodies in Visual Studio 2019 Preview:</h3>
+<p>You can have Preview installed side-by-side, and preview is the only way you can see the .NET 5 goodies.  Here are some of the editor goodness they've added in Preview:</p>
+<p>https://docs.microsoft.com/en-us/visualstudio/ide/reference/options-text-editor-csharp-advanced?view=vs-2019#editor-help</p>
+<h3>TypeScript 4.0 is now Generally available:</h3>
+<p>https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/?ocid=3017124</p>
+<h3>App Trimming is going to be in .NET 5.</h3>
+<p>https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5/ and you can customize it:
+https://devblogs.microsoft.com/dotnet/customizing-trimming-in-net-core-5/</p>
+<p>I have no idea what this does from a practical perspective; it sounds like it removes unused members, functions, methods, etc, which should lower the executable size.  Great for people who deploy to user's desktops and Microservices; but not sure in the normal 'we deploy to our server' instance this would be useful.  Shout out if I'm wrong and let me know why.</p>
+<h3>You now have template parity between the dotnet new command and the Visual Studio project templates</h3>
+<p>As of Visual Studio 16.8 Preview 2, you can now toggle in the settings to see all the templates you'd see from the command line. I like this, but I'm probably the only one that thinks this should be the default, and not the other way around. https://devblogs.microsoft.com/dotnet/net-cli-templates-in-visual-studio/</p>
+<h3>.NET is faster on ARM64 now</h3>
+<p>The .NET team has been working hard to improve performance for ARM64 for .NET, and I'm glad.  I don't think Intel is long for this brave new world.</p>
+<p>This blog post rivals most Steve Yegge blog posts; but if reading nitty gritty implementation details about the ARM platform juices you, give this blog post a read.</p>
+<p>https://devblogs.microsoft.com/dotnet/arm64-performance-in-net-5/</p>
+<h3>AOP using Proxies in .NET Core</h3>
+<p>This doesn't get enough press, and AOP doesn't get enough love, but check this out: https://blog.zhaytam.com/2020/08/18/aspnetcore-dynamic-proxies-for-aop/</p>
+<h3>NDC Minneosota starts online tomorrow</h3>
+<p>Yea, I missed this; but if you've got money to burn, NDC is a great place to burn it. Or you can wait 6 months for the videos to be on Youtube.</p>
+<p>https://ndcminnesota.com/tickets</p>
+<h3>.NET Now supports the <code>Half</code> Datatype</h3>
+<p>I really thought this was a joke. But reading it, it isn't.  There's the need for a Half data type, apparently?</p>
+<p>https://devblogs.microsoft.com/dotnet/introducing-the-half-type/</p>
+<p>And that's it for what happened last week in .NET . Today is a holiday so I won't be releasing the audio form of this newsletter.  If there's something I missed, reach out to me &#64; george&#64;georgestocker.com, and let me know.</p>

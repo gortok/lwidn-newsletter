@@ -1,0 +1,41 @@
+<p>This is Last Week in .NET for the week ending 10 October 2020.</p>
+<p>No releases this week, but lots of goodies showing off .NET 5.</p>
+<p>Starting out with some inside baseball, I'm working to improve the layout of the newsletter, and if there's someone's design you think I should shamelessly copy, let me know on twitter 🐦: <a href="https://twitter.com/gortok">&#64;gortok</a>.</p>
+<p>🎥 <a href="https://twitter.com/dotnet/status/1314621654425796609">Rich Lander and Jared Parsons of Microsoft talk C# 9</a> - C# 9 gives us records (light-weight approaches to DTOs and property-based data structures), top-level statements (the ability to remove all the ceremony from a single file C# script, like &quot;static void main&quot;), and init only properties (ability to init properties with a value without super long constructors).</p>
+<p>In other words: C# will let you write less plumbing code.  Watching Jared Parsons writing code during this video reminds me of two things: 1) Visual Studio should enable line numbers by default, 2) You can tell when someone writes for the Roslyn compiler for a living because of how they write C# code, and I'll never get to that level.</p>
+<p>🎥 <a href="https://www.youtube.com/watch?v=Ehvr9wXJNEM">Stephen Toub talks through .NET 5 performance Improvements</a> Things like:</p>
+<ul>
+<li>new APIs</li>
+<li>JIT improvements (types/bounds checking, zeroing)</li>
+<li>Regex improvements</li>
+</ul>
+<p>and more!</p>
+<p>📰 <a href="https://www.theverge.com/2020/10/9/21508964/microsoft-remote-work-from-home-covid-19-coronavirus">Microsoft will let employees work from home permanently</a> .</p>
+<p>156,439 are crying tears of both joy and sorrow.  Joy at working from home, Sorrow at having to use Microsoft Teams full time. Hey, maybe this will be the push needed for Microsoft to improve Teams?</p>
+<p>📝 <a href="https://jonhilton.net/blazor-wasm-prerendering-missing-http-client">Jon Hilton continues his series on Blazor and pre-rendering</a>. If those words mean something to you, check out their blog post, otherwise drive on by.</p>
+<p>📝 <a href="https://devblogs.microsoft.com/xamarin/xamarin-forms-5-preview/">What's coming in Xamarin Forms?</a> David takes us through incoming changes to Xamarin Forms with Radio button changes, shapes and brushes, and more.</p>
+<p>🐞 <a href="https://github.com/dotnet/SqlClient/issues/422">Multiple Active Result Sets on the SqlClient for Linux is slower than on Windows</a>  If you use a linux container or .NET Core runtime, you're going to want to pay attention to this bug if you have MARS enabled.</p>
+<p>📝 <a href="https://nicksnettravels.builttoroam.com/debug-code-gen/">Debug Source Generators in C# 9 and Visual Studio</a> Code Generation has a storied past.  One of the C# 9 features is the ability to implement Source Generators in a 'standard' way.  This blog post takes that one step further and tells you how to debug these new Source Generators.  It does not, however, tell you what to do when the source generator takes your job.</p>
+<p>📝 <a href="https://www.stevejgordon.co.uk/dotnet-internals-system-threading-channels-unboundedchannel-part-2">Diving into System.Threading.Channels.UnboundedChannel<T> (Part 2)</a> Can we not? I mean, if you find yourself needing this namespace, you should already either really love what you do or be suffering from Stockholm Syndrome.  Either way, Steve Gordon has your back with this blog post.  I'm still getting over my time with .NET Remoting, if I'm being transparent.</p>
+<p>📅 <a href="https://ndcsydney.com/tickets"> NDC Sydney tickets close out in 6 hours</a> you should buy them now if you want to 'go' (virtually).  Or you can wait two weeks for them to show up on Youtube.</p>
+<p>⛳ <a href="https://www.pluralsight.com/courses/c-sharp-design-patterns-rules-pattern">Steve Smith (not the American Football player) helps you design a rules engine in C# in this Pluralsight course</a>.  Ok, Rules Engines are on those list of things that are a terrible idea but someone has a hankering for them so you're gonna do it, and then you're going to maintain it and find out why it's a bad idea (hint: It's 5% code, 95% documentation, usecases, and examples).  But if that doesn't bother you, then by all means, create a rules engine.</p>
+<p>📅 <a href="https://www.dotnetconf.net/">.NET Conf (yes, the correctly spelled one) is November 10th-12th)</a> Are you 'going'? If not, I'll be livetweeting it <a href="https://twitter.com/gortok">&#64;gortok on twitter</a>. Mute me now.</p>
+<p>🐦 <a href="https://twitter.com/terrajobst/status/1313901378301878272">In a blast from the past, Immo Landwerth shows his powerpoint presentation from the days of convincing executives to open source .NET</a> The Powerpoint (can be found <a href="https://onedrive.live.com/view.aspx?resid=B97E87F4B2E2AEDC!286998&amp;ithint=file%2cpptx&amp;authkey=!ACPOtTVrotG6MjU">here, on onedrive</a>. With the Here's a [literal] Powerpoint on my OneDrive action going on, <a href="https://www.youtube.com/watch?v=iPJurOSEyLw">I can't shake this scene out of my head</a>.</p>
+<p>It makes me wonder if on Microsoft performance reviews whether they judge employees on how many Microsoft products they use:
+Surface book? Check
+OneDrive? Check
+Windows? Check
+Zune? Check
+Word? Check
+Powerpoint? Check
+Teams? Check
+Azure? No? They USE AMAZON WEB SERVICES?</p>
+<p>PROMOTION DENIED.</p>
+<p>📝 <a href="https://andrewlock.net/deploying-asp-net-core-applications-to-kubernetes-part-1-an-introduction-to-kubernetes/">Do you want to deploy ASP.NET Core to Kubernetes?</a> Please say no.  But if you said yes, Andrew Lock has a blog post for you.  He of course can't say &quot;Don't use Kubernetes&quot; since his blog post is based on you using Kubernetes, but I can. Don't use Kubernetes unless you want your next job to be managing Kubernetes.</p>
+<p>📝 <a href="https://devblogs.microsoft.com/dotnet/game-development-with-net/">Microsoft is trying to reinvigorate the .NET Game development Community</a> WE HAVEN'T FORGOTTEN WHAT YOU DID TO XNA, MICROSOFT.</p>
+<p>Ok, sorry for shouting, I'm still a little sore about XNA.</p>
+<p>📰 <a href="https://www.axios.com/labor-department-probes-microsofts-diversity-policy-288876e7-8033-4195-8b72-69276f3a26dc.html">Labor Department is probing whether Microsoft trying to raise its black employee population is... racial discrimination</a> As if this hellscape we call 2020 couldn't get any worse, we now have to deal with this. I have no kind words to say about the Labor department's move here, so I'll just say GFSF.</p>
+<p>📅 <a href="https://www.youtube.com/watch?v=CX8wT0mO5qg">The .NET Foundation &quot;All Hands&quot; is today at 11:30am EDT</a> I'll hum the highlights if you miss it. <a href="https://twitter.com/gortok">On twitter</a>, of course.</p>
+<p>📝 <a href="https://www.asmak9.com/2020/10/cnet-how-to-build-web-url-query.html">There's got to be an easier way to build query parameters in C#</a> Nothing against this blog post, but it being 2020, I would imagine adding Query Parameters should be as dead simple as possible by now. The API still feels... forced.</p>
+<p>🐦 <a href="https://twitter.com/davidfowl/status/1313010391149027328?s=20">Want to see attributes on local functions? Me neither, but here you go</a> Something something get off my lawn. Soon code will be one giant file with one giant method and 10 billion little local methods and we'll all chant &quot;This is the way&quot;.</p>
+<p>All in all, that's everything I found last week in .NET. No releases by Microsoft, I imagine they're pretty quiet trying to hunker down for the release of .NET 5. We shouldn't see any more Release Candidates unless something major happens.</p>

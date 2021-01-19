@@ -1,0 +1,46 @@
+<h3>.NET Core 3.1.8 and .NET Core 2.1.22 have been released</h3>
+<p>https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.8/3.1.8.md</p>
+<p>https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1.22/2.1.22.md</p>
+<p>This release includes a fix for a rather nasty CVE and... Not much else.  <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1045">CVE-2020-1045</a> allows an attacker to craft a cookie that can bypass ASP.NET Core security.  Whaaaaaaatt. Patch your systems now.</p>
+<h3>CVE-2020-1472 has been reproduced</h3>
+<p>But speaking of CVEs, <a href="https://twitter.com/ptswarm/status/1305479737234599941?s=20">looks like a security firm reproduced CVE-2020-1472</a>.  Kinda neat if you want to learn more about infosec (&quot;Cyber Security&quot; if you are a government employee or contractor).</p>
+<p>[CVE-2020-1472](https://nvd.nist.gov/vuln/detail/CVE-2020-1472 allows an attacker to bypass domain authentication with a specially crafted request that allows them to escalate their privileges.  This is, of course, only an issue if you're using Microsoft server.  You're not, right? You've already moved to linux? No? Oh.</p>
+<h3>Blazor now has a graphql client</h3>
+<p>In the &quot;Leave some innovation for the rest of us&quot;, Blazor now has a GraphQL Client.  Though, if you're using blazor and graphql you've blown your innovation token quota for a few years. Be safe out there.</p>
+<p>https://oceanware.wordpress.com/2020/09/08/blazor-wasm-graphql-client/</p>
+<h3>.NET Conf Call for Content closes today at 2:59pm EDT (-4 UTC).</h3>
+<p>Which means... You've got a few hours to put your proposal together.  Not sure how I missed the CFP, but I'll do better next time.</p>
+<p>The virtual conference itself takes place November 10th and 11th, 2020.  Expected releases include .NET 5.</p>
+<h3>EF Core for .NET 5 is <em>done</em></h3>
+<p><a href="https://github.com/dotnet/efcore/issues/19549#issuecomment-690653954">That's what's what they say</a> (these aren't my words, I'm just the messenger).</p>
+<p>Here's the list of things they finished <em>just</em> in Preview 8:</p>
+<ul>
+<li>Table-per-type (TPT) mapping</li>
+<li>Migrations: Rebuild SQLite tables</li>
+<li>Table-valued functions</li>
+<li>Flexible query/update mapping</li>
+<li>Context-wide split-query configuration</li>
+<li>PhysicalAddress mapping</li>
+<li>Add FieldInfo overload for NavigationBuilder</li>
+<li>Query generation for GroupBy with OwnsOne</li>
+<li>Support join after GroupByAggregate</li>
+<li>Generate a warning for multiple collection Includes</li>
+<li>Convert multiple equality on same column joined by Or/Else into SQL IN expression</li>
+<li>Make discriminator properties read-only be default</li>
+<li>Add an IDbContextFactory that pools context instances</li>
+<li>Cosmos: Allow PK with just the partition key</li>
+</ul>
+<p>And that's just in Preview8. Great Job, EF Team!  I'm happy that EF Core will be ready for .NET 5; but my quiet voice says I can't wait for a less bloated ORM to take over.</p>
+<h3>Jetbrains dotUltimate / Resharper / Rider / et. al 2020.2 has been released</h3>
+<p>https://www.jetbrains.com/resharper/</p>
+<p>This fixes a really annoying bug I was facing in .NET 5 Preview 8 where my tests were listed as inconclusive and wouldn't run when I tried to debug them. There's also a lot more here, but squeaky wheel and all that.</p>
+<h3>NoVA (virtual) code camp is September 26th</h3>
+<p>If you have nothing to do that day (it's a saturday) and you want to learn some neat stuff, <a href="https://novacodecamp.org/">sign up here</a>.</p>
+<h3>Want to Contribute to .NET but don't know where to start?</h3>
+<p>The .NET team has got you covered by listing what issues are up for grabs and their relative difficulty. Thanks to <a href="https://twitter.com/tannergooding/status/1303781117812600832?s=20">Tanner Gooding for the tweet</a>.</p>
+<h3>.NET Team twitter list</h3>
+<p>Speaking of twitter, <a href="https://twitter.com/shanselman/status/1303869001009823744?s=20">Scott Hanselman put together a list of all the members of the .NET team on twitter</a>. If the intersection of twitter and .NET is your jam, two things:</p>
+<ol>
+<li>we should be friends, and 2) follow that list.</li>
+</ol>
+<p>And that's it for what happened last week in .NET.  Overall a pretty light week.  I'll see you next week.</p>

@@ -1,0 +1,38 @@
+<h3><a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0-rc-1/">.NET 5 RC1 is now available</a></h3>
+<p>It's great to see .NET 5 so close to release.  The blog post announcing, however, has a whiplash moment I just need to note:</p>
+<blockquote>
+<p>and the first of two RCs before the official release in November. RC1 is a “go live” release; you are supported using it in production.
+At this point, we’re looking for reports of any remaining critical bugs that should be fixed before the final release.</p>
+</blockquote>
+<p>So what I'm reading is that the target demographic for .NET 5 RC1 is people who want to use it in production and aren't afraid to encounter critical bugs.</p>
+<p>Oh.</p>
+<p>Big hits in .NET 5 include C# 9 Records, System.Text.Json (replacement for Newtonsoft.Json)</p>
+<h3><a href="https://twitter.com/david_whitney/status/1307715123780505601">'Single File Applications' are making it into .NET 5</a></h3>
+<p>Ok, terminology pop quiz.</p>
+<p>Does &quot;Single File application&quot; mean a single source control file or a single output file?</p>
+<p>So to correct the lede, it's a &quot;Self Contained Application&quot;, where a single output file is published that contains the runtime, references, and the application code.</p>
+<p>There is also a push for &quot;Single File&quot; applications where you can literally write your entire program in one source control file without the ceremony you normally need. the .NET team calls this a &quot;Top Level Statement&quot;.</p>
+<p>Naming is hard and we as an industry are especially bad at it.</p>
+<h3><a href="https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/?_lrsc=4419e5d0-9f4d-49ea-975d-fd2d1a4a68eb">.NET standard is going the way of the dodo bird.</a></h3>
+<p>Long story short, target <code>.NET-5.0</code> if you want cross-platform, and target <code>.NET-5.0-windows</code> if you want Windows specific features.</p>
+<h3>EFCore PowerTools have been updated for .NET 5 RC 1</h3>
+<p>https://github.com/ErikEJ/EFCorePowerTools/wiki/Release-notes#24212-september-17-2020</p>
+<h3></h3>
+<h3><a href="https://blog.jetbrains.com/dotnet/2020/09/21/webinar-service-creation-via-net-core-templates/">Jetbrains is hosting a webinar on Service Creation via .NET Core Templates</a></h3>
+<p>It's on Wednesday, October 14, 2020, at 10:00am EDT.</p>
+<p>If you're interested in learning more about .NET API Templates, give this webinar a shot.  I'm not really sure what they mean by &quot;service&quot; here, whether it's &quot;Micro services&quot; or some other usage, but that's really an us problem.<br />
+Let's retire the name service. That and eliminating timezones is my 2024 campaign platform.</p>
+<h3>Jerome Hardaway and Michael Brown talk about how hard it is to get developers to embrace .NET</h3>
+<p><a href="https://twitter.com/browniepoints/status/1306082975814049793">Michael's thread is here</a></p>
+<p>The elephant in this particular room is that the .NET community as a whole isn't seen as welcoming or as a place where new developers should invest their time.</p>
+<p>[Jerome runs <a href="https://vetswhocode.io/">vetswhocode.io</a> and <a href="https://twitter.com/JeromeHardaway/status/1305299659917799427">put .NET up for a vote</a> as the next platform to teach, and it was struck down by a vote of 121-1.</p>
+<p>Your programming framework is only as relevant as it has new blood. Having new developers unceremoniously dumping .NET says a lot about where people outside the community think we stand.</p>
+<p>We can go two ways from here: We can listen, ask questions on how we can improve, and do so; or we can stick our heads in the sand and in 10 years hang out at the &quot;Dumped platforms convention&quot; with Cold Fusion and ActionScript.</p>
+<p>.NET Core has re-invigorated the .NET community in a way I wouldn't have thought possible, but unless we act as the ambassadors .NET needs to thrive, we'll lose that momentum.</p>
+<h3><a href="https://twitter.com/jeremydmiller/status/1306309169180442624">JetBrains Rider 2020.3 will include the Immediate Window</a></h3>
+<p>I'm surprised Rider has made it this long without the Immediate Window. I'm not sure if this is an argument for or against an MVP but it does emphasize a bonus of switching to CalVer: No one knows how old your software is. (For the record, JetBrains rider has been out for 3 years).</p>
+<h3><a href="https://dotnetfoundation.org/blog/2020/09/10/blog/posts/net-foundation-all-hands-fall-2020?utm_content=139754601&amp;utm_medium=social&amp;utm_source=twitter&amp;hss_channel=tw-2384354214">.NET Foundation will host an All Hands meeting on October 13-14th, 2020</a></h3>
+<p>The event will take place: Tuesday, October 13th, at 11:30-12:30 Eastern Daylight Time, and it's going to take place via Microsoft Teams.  Microsoft is placing a lot of trust on Microsoft Teams, and we'll see how it goes.</p>
+<h3><a href="https://weblog.west-wind.com/posts/2020/Sep/14/Dont-get-burned-by-missing-await-Calls-for-Async-Code-in-ASPNET-Core-Middleware?utm_content=buffer0d807&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Rick Strahl talks about the perils of misuing await in ASP.NET Core Middleware</a></h3>
+<p>This post is a good read if you are new to async in ASP.NET Core Middleware.</p>
+<p>And that's it for what happened Last Week in .NET.  I'm George Stocker, and I help .NET teams deliver better software faster. If your team feels like it's struggling against the wave of feature requests and roadmap changes, reach out at www.doubleyourproductivity.io.</p>
