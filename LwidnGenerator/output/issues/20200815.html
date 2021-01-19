@@ -1,0 +1,54 @@
+<h3>.NET Core 3.1.7 has been released</h3>
+<p><a href="https://devblogs.microsoft.com/dotnet/net-core-august-2020/">Release Notes</a></p>
+<p>The big news here is another major CVE has been patched, this time against ASP.NET Core.  <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1597">CVE-2020-1597</a> which is a Denial of Service vulnerability that targets how ASP.NET handles unauthenticated web requests.</p>
+<p>In typical CVE fashion there isn't a released proof of concept; so while it's unknown if there are any exploits in the wild, you should upgrade and patch your ASP.NET Core installations immediately.</p>
+<p>Also released in .NET Core 3.1.7 is a change to how .NET Core applications are built; ASP.NET Core applications <a href="https://docs.microsoft.com/en-us/dotnet/core/install/macos-notarization-issues">no longer generate a dylib on Mac, rather they generate a DLL</a>; this is due to the new notarization requirements starting in Mac OS Catalina.</p>
+<p>If you're running an Ubuntu image based on version 19.10; be advised that it has now fallen out of support for .NET Core.  It's a brave new world folks where Microsoft takes a hatchet to OSes older than a year.  Keep in mind Windows 7 just fell out of support, so you know what side their bread is buttered on.</p>
+<p>Also included is a new .NET Core SDK update: <a href="https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1.7/3.1.7.md#changes-in-317">3.1.107</a></p>
+<h3>.NET Core 2.1.21 has been released</h3>
+<p>This is also a release that fixes the CVE for .NET Core 2.1; <a href="https://dotnet.microsoft.com/platform/support/policy/dotnet-core">which is Microsoft's LTS supported version of .NET Core 2</a></p>
+<h3>Visual Studio 16.7.1 has been released;</h3>
+<p>Besides some IDE bugs fixed; the big news here is this also is listed as a product to update under CVE-2020-1597.</p>
+<h3>Visual Studio 2017 15.9.26 has been released:</h3>
+<p><a href="https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes#15.9.26">Same for the CVE-2020-1597</a>.</p>
+<p>https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes</p>
+<p>Also if anyone is wondering whether your release cycle is complicated, the Visual Studio team is supporting no less than three different versions of VS 2019 version 16.x in production. <a href="https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.0#16.0.17">16.0.17</a>, <a href="https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.4">16.4.12</a>, and <a href="https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes">16.7.1</a>.</p>
+<p>Please reach out to someone at the Visual Studio team and ask them if they're feeling ok.</p>
+<p>Cecil Phillip sat down with David Glick to talk about Statiq; a static site generation framework for .NET Core.  I'm just getting into statiq (I want to use it to host the web version of these newsletters and make the generation process less... manual) and this is a great video to watch if you want to learn about Statiq.</p>
+<p>https://www.youtube.com/watch?v=43oQTRZqK9g</p>
+<h3>JEtbrains announces release 2020.02 for Jetbrains resharper</h3>
+<p>The 2020.2 versions of JetBrains .NET tools and extensions are here</p>
+<p>https://www.jetbrains.com/resharper/whatsnew</p>
+<p>https://www.jetbrains.com/rider/whatsnew</p>
+<p>and licensing changes:</p>
+<p>https://blog.jetbrains.com/dotnet/2020/07/15/licensing-update-net-tools/?mkt_tok=eyJpIjoiT0RkbFltUmpaREF5TW1KaiIsInQiOiJGRTJMdEFFaDYybUNRWkVaeVpRY3lBTTQzczI3ODVCd1luNlpWSkxTR0xVeUZXaTNpMWpaTlpENEpEQkw2WEJuTjd1MDlRMjZ0YmRyWG5cLys0cFVUTmZVTkdXNGE0TnR1RWhpN1wvMzRHVlFiMEMzRG03RENDa0dYQWhKRCt2N2VGIn0%3D</p>
+<h3>NoVA Code Camp</h3>
+<p>https://sessionize.com/northern-va-codecamp-fall-2020/</p>
+<h3>Microsoft ranks #3 on OSS contributions:</h3>
+<p>https://twitter.com/gortok/status/1293566607986491394?s=20</p>
+<p>I will give microsoft credit here:  10 years ago they were <em>nobody</em> in the world of Open Source software. Literally not even on the radar.</p>
+<p>That said, I've got some problems with this ranking.  YOu know the guy on youtube that sits in the forest and builds a house from first principles? It's pretty neat.  Anyway, Microsoft is that guy, github is youtube, and we're the people who can watch but can't really force him to build a castle from first principles.  Although there's a youtube channel for that too. Anyway,  we're spectators. Microsoft pays the salaries of the .NET Maintainers (all of whom are Microsoft employees), and the .NET foundation's Executive director (And treasurer), are Microsoft employees.  This isn't altruistic code contribution to OSS, this is &quot;Watch us build our products in the open&quot;.</p>
+<p>You don't get a cookie for that.</p>
+<h3>Microsoft releases site that touts its OSS</h3>
+<p>https://www.zdnet.com/article/microsoft-to-developers-these-are-our-biggest-and-best-open-source-projects/?ftag=COS-05-10aaa0g&amp;taid=5f355c8166390400014f4a53&amp;utm_campaign=trueAnthem%3A+Trending+Content&amp;utm_medium=trueAnthem&amp;utm_source=twitter</p>
+<h3>Guidance for developing with Entity Framework in ASP.NET Core Blazor has been released:</h3>
+<p>https://docs.microsoft.com/en-us/aspnet/core/blazor/blazor-server-ef-core?view=aspnetcore-3.1</p>
+<p>If you're building Blazor Server apps and you want to use EF Core, this is an extremely useful set of documentation. S/o to <a href="https://twitter.com/jeremylikness">Jeremy Likness</a> for the link.</p>
+<h3>DevIntersection is hosting a 2-day series of workshops on .NET:</h3>
+<p>https://virtual.devintersection.com/#!/ is hosting a virtual 2-day series of workshop for the corporate friendly price of $199 on September 1st and 2nd 2020. Speakers include some pretty big names in the .NET space, including the Gu (sigh. Fine, &quot;Scott Guthrie&quot;), Kimberly Tripp, , Carl Franklin, Michelle Bustamente, and Scott Hunter.</p>
+<p>Each workshop is $199 and for that you also get access to the free keynotes.  I signed up for the keynotes, and understand that if you do, <a href="https://twitter.com/AzureAIConf/status/1294786197634547714?s=20">you can be entered to win an XBox or a free workshop</a></p>
+<h3>Emotions we have but don't can't explain</h3>
+<p><a href="https://twitter.com/tamikocodes/status/1294780237079707648?s=20">This is still messing me up</a>.</p>
+<h3>Scott Hanselman releases a video explaining the .NET Ecosystem</h3>
+<p>If you're new to .NET (or even if you aren't) this video by Scott Hanselman explains the .NET ecosystem in all its 20 year sprawling majesty in a <a href="https://www.youtube.com/watch?v=bEfBfBQq7EE&amp;feature=youtu.be">youtube video</a>.</p>
+<p>Tempted to make a TikTok. Let's GO!<sup>*</sup>.</p>
+<h3>Maoni Stephens releases a 3 part series on the .NET GC on Youtube</h3>
+<p><a href="https://www.youtube.com/watch?v=3j3PDln7Z2I">Maoni Stephens shares how the GC works in three parts</a>. I love these sorts of videos.  I had to learn about the GC from Jeffrey Richter's &quot;CLR via C#&quot; book (back when there was only 1 edition), and now we can learn this stuff on Youtube.  There's a little bit of jealousy, but mostly I'm grateful for people who take the time to share this stuff.</p>
+<h3>Mads Torgerson addresses the viral &quot;stuff I wish C# had but doesn't&quot; tweet</h3>
+<p>Mads went to twitter to address the tweet that made it on the Orange Site that detailed some changes the author wishes C# had. <a href="https://twitter.com/MadsTorgersen/status/1294581581617782785?s=20">Mads wrote</a>:</p>
+<blockquote>
+<p>This is a great list of useful features missing from C#. They aren't fundamental flaws and could all be addressed; many are already on the radar for future versions. E.g. primary constructors are planned for C# 10.0, and could then be a building block for object expressions.</p>
+</blockquote>
+<p>I'm not really one to ask about all these new features because I'd be perfectly happy with C# 5.  Some of the newer features are rather nice; but I don't think fundamental tinkering with the syntax of a language is a great way to maintain language cohesiveness.  Call me old fashioned.</p>
+<h3>Did you know the ASP.NET community team holds a weekly Standup?</h3>
+<p>I'm not sure it's actually a standup but naming is hard.  Anyway, you can check it weekly, <a href="https://dotnet.microsoft.com/platform/community/standup">here</a>.</p>

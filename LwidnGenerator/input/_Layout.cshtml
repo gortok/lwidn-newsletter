@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  @Html.Partial("_partials/_head")
+  @RenderSection("head", required: false)
+</head>
+<body>
+  @Html.Partial("_partials/_header")
+<section class="hero ">
+	<div class="hero-body">
+		<div class="container">
+			@RenderBody()
+			<div class="is-divider"></div>
+
+			
+
+		</div>
+	</div>
+</section>
+@Html.Partial("_partials/_newsletter")
+@RenderSection("newsletter", required: false)
+</body>
+</html>

@@ -1,0 +1,77 @@
+<h3>.NET 5 RC1 is coming soon</h3>
+<p>Ok so technically this isn't &quot;released&quot; yet but David Fowler of the .NET team shared this photo in a tweet that shows two interesting tidbits, .NET 5 preview 7 is the last preview (AKA 'alpha') release and .NET 5 (Version 5.0.100) RC1 is coming soon. The other interesting tidbit is the 'master' branch (poor naming choice)  is .NET 6.0.x, and at least as of this moment .NET 6 is slated for <a href="https://github.com/dotnet/runtime/milestones">November 2021</a>.</p>
+<h3>Microsoft Ignite is September 22-24th, 2020, and is Free.</h3>
+<p>Sign up here: https://www.microsoft.com/en-us/ignite</p>
+<h3>DevIntersection is hosting a 2-day series of workshops on .NET:</h3>
+<p>https://virtual.devintersection.com/#!/ is hosting a virtual 2-day series of workshop for the corporate friendly price of $199 on September 1st and 2nd 2020. Speakers include some pretty big names in the .NET space, including the Gu (sigh. Fine, &quot;Scott Guthrie&quot;), Kimberly Tripp, , Carl Franklin, Michelle Bustamente, and Scott Hunter.</p>
+<p>Each workshop is $199 and for that you also get access to the free keynotes.  I signed up for the keynotes, and understand that if you do, <a href="https://twitter.com/AzureAIConf/status/1294786197634547714?s=20">you can be entered to win an XBox or a free workshop</a></p>
+<p>Microsoft's Ignite conference is <a href="https://blogs.microsoft.com/blog/2020/08/06/microsoft-ignite-2020-empowering-the-technical-community-to-help-customers-innovate-and-rebuild-in-a-changing-world/?ocid=FY21_soc_omc_br_tw_Ignite_hype">September 22-24, 2020, and is free</a>.  The subtitle of the conference is &quot;Empowering the technical community to help customers innovate and rebuild in a changing world&quot; which roughly translates to &quot;Build new &amp;$&#64;#, get paid&quot;.  Registration opens September 3rd, 2020.</p>
+<h3>Looks like CSharpForMarkup is staying in Xamarin Forms 5</h3>
+<p>do you ever see those fight videos on youtube that start just a few seconds too late so you don't know what caused it and you're left reading the comments to figure out what the hell is going on?  <a href="https://github.com/xamarin/Xamarin.Forms/issues/11857#issuecomment-677517116">This is like that, but on Github</a>.</p>
+<p>Anyway, turns out after the team was going to take out CSharpFormarkup support out of Xamarin Forms 5 and move it to .NET 6 (MAUI), the loud voices on Github convinced them to keep it in.</p>
+<p>C# for Markup allows a programmer to write C# markup instead of XAML for Xamarin forms. <a href="https://github.com/VincentH-Net/CSharpForMarkup">Looks neat</a>.  Incidentally, it was <a href="https://twitter.com/vincenth_net/status/1296406760459247617">the author of C#ForMarkup that let me know about this on twitter</a>.</p>
+<h3>EFCore updates -- Many to Many is in the daily builds</h3>
+<p>You know an ORM is nascent <a href="https://github.com/dotnet/efcore/issues/19549#issuecomment-677809968">when Many-to-Many support is <em>just</em> landing</a>.  I remember when EFCore was billed as a <a href="https://docs.microsoft.com/en-us/ef/core/">lightweight alternative to EF6</a>.  There's no doubt that Entity Framework 6 was plagued by three different ways to do the same thing with teams ending up mixing and matching and driving each other crazy.  The hope is the EFCore team keeps their eye on the ball and keeps a unified focus on what the API should look like for EFCore.  Given that Microsoft's bread is buttered by large enterprises that hate change, I'm not holding my breath, however.</p>
+<h3>Emotions we have but don't can't explain</h3>
+<p><a href="https://twitter.com/tamikocodes/status/1294780237079707648?s=20">This is still messing me up</a>.</p>
+<h3>Scott Hanselman releases a video explaining the .NET Ecosystem</h3>
+<p>If you're new to .NET (or even if you aren't) this video by Scott Hanselman explains the .NET ecosystem in all its 20 year sprawling majesty in a <a href="https://www.youtube.com/watch?v=bEfBfBQq7EE&amp;feature=youtu.be">youtube video</a>.</p>
+<p>Tempted to make a TikTok. Let's GO!<sup>*</sup>.</p>
+<h3>The .NET Team releases a deep dive into how .NET is built and released</h3>
+<p>This is a follow-up to the public twitter statement that .NET daily builds aren't available when there are undisclosed security fixes; the .NET went through their entire build process.  On a personal note, <a href="https://devblogs.microsoft.com/dotnet/a-deep-dive-into-how-net-builds-and-ships/">I made it through after a two-drink minimum</a>.  It also brings to sharp relief that .NET will always have Microsoft as its <a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">benevolent dictator for life</a>.</p>
+<h3>Maoni Stephens releases a 3 part series on the .NET GC on Youtube</h3>
+<p><a href="https://www.youtube.com/watch?v=3j3PDln7Z2I">Maoni Stephens shares how the GC works in three parts</a>. I love these sorts of videos.  I had to learn about the GC from Jeffrey Richter's &quot;CLR via C#&quot; book (back when there was only 1 edition), and now we can learn this stuff on Youtube.  There's a little bit of jealousy, but mostly I'm grateful for people who take the time to share this stuff.</p>
+<h3>Mads Torgerson addresses the viral &quot;stuff I wish C# had but doesn't&quot; tweet</h3>
+<p>Mads went to twitter to address the tweet that made it on the Orange Site that detailed some changes the author wishes C# had. <a href="https://twitter.com/MadsTorgersen/status/1294581581617782785?s=20">Mads wrote</a>:</p>
+<blockquote>
+<p>This is a great list of useful features missing from C#. They aren't fundamental flaws and could all be addressed; many are already on the radar for future versions. E.g. primary constructors are planned for C# 10.0, and could then be a building block for object expressions.</p>
+</blockquote>
+<p>I'm not really one to ask about all these new features because I'd be perfectly happy with C# 5.  Some of the newer features are rather nice; but I don't think fundamental tinkering with the syntax of a language is a great way to maintain language cohesiveness.  Call me old fashioned.</p>
+<h3>Rick Brewster opines on what neat things you could do if we could get rid of the .Count property for certain collections:</h3>
+<p>https://threadreaderapp.com/thread/1295936199345844224.html</p>
+<h3>Did you know the ASP.NET community team holds a weekly Standup?</h3>
+<p>I'm not sure it's actually a standup but naming is hard.  Anyway, you can check it weekly, <a href="https://dotnet.microsoft.com/platform/community/standup">here</a>.</p>
+<h3>Proposal to allow Wildcard using statements</h3>
+<p>If you've used Python or TypeScript, you've seen this sort of approach when importing modules from a third-party library.  Dave mentions it as a way to handle the fact that some types of utility methods (like extension methods) should really be at the top level, even though organizationally, Visual Studio loves it when your namespaces reflect your folder structure, and penalizes you with red squigglies when you don't.  <a href="https://github.com/dotnet/csharplang/issues/2653">It's an interesting proposal, and I'm going to keep an eye on it</a>.</p>
+<h3>System.Text.Json getting more love for .NET 5.</h3>
+<p>After Microsoft bought out Newtonsoft and its author, it immediately set to replacing NewtonSoft.Json with it's own System.Text.Json (incidentally, I'm not clear as to whether James Newton-King worked on System.Text.Json), and for .NET 5 it appears <a href="https://twitter.com/layopower/status/1295867230316425216?s=20">System.Text.Json is getting some much needed additions</a>.  It even has <a href="https://github.com/dotnet/runtime/projects/25#column-7634129">its own Kanban board</a>.</p>
+<h3>David Fowler of the .NET team shows off more Top-level statements</h3>
+<p>I'm torn on top-level statements.  One of my favorite parts of Perl was the ease at which I could create a one-liner or a single file program, and from a nostalgia perspective I'm happy C# is getting that, but on the other hand, it's this &quot;there's ten billion ways to do the same thing&quot; that ends up plaguing all programming language environments and making it hard for new people to figure out what the hell is going on.  Yea, &quot;You're only new once&quot;, but it's an eternal september out here, folks.</p>
+<p>Anyway, <a href="https://twitter.com/davidfowl/status/1295792080216657921">David Fowler shows off what you can do with Top-level statements in this tweet</a>.</p>
+<h3>What's coming with Blazor in .NET 5?</h3>
+<p>The .NET Team <a href="https://www.youtube.com/watch?v=KRNd8JDRqRc&amp;list=PL1rZQsJPBU2St9-Mz1Kaa7rofciyrwWVx&amp;index=0">showed off blazor improvements during their .NET community standup</a>, I missed this when it happened, but I absolutely refuse to rename this the &quot;Last two weeks in .NET&quot; newsletter.</p>
+<p>Some of the touted improvements:</p>
+<ul>
+<li>CSS Isolation</li>
+<li>Lazy-loading</li>
+<li>Auto refresh with dotnet watch</li>
+</ul>
+<h3>Blog post on C# 9 records has been released</h3>
+<p>C# 9 makes it easier to declare immutable data structures with the <a href="https://daveabrock.com/2020/08/14/records-spec">advent of Records</a>.</p>
+<h3>Todo: Fix vulnerability</h3>
+<p>https://krebsonsecurity.com/2020/08/microsoft-put-off-fixing-zero-day-for-2-years/</p>
+<p>Microsoft patched CVE-2020-1464 on August 11 during their normal Patch Tuesday release.  This CVE dealt with how Windows validates digital signatures for programs. Developers among us call this 'code signing', and it allows for a company to have their software blessed as being 'from them' and just as importantly verify that nobody mucked with the executable itself.  One of the more frightening parts of the internet is that before code signing (and even after it), we just blindly trust software we downlaod, and that was fine when it didn't underpin our way of life, but this being 2020, software is everywhere, used for everything.</p>
+<p>This CVE exploited that process to effectively spoof the origin of a piece of software, or more nefariously, be able to modify an executable without triggering a warning upon install.</p>
+<p>All of this is normal so far, as far as CVEs go. They happen, and they get patched.  What makes this remarkable is that Microsoft waited <em>two years</em> to patch this CVE, even though there was evidence it was being exploited in the wild and that researchers told Microsoft of this fact repeatedly.</p>
+<p>In case that isn't enough to raise the hairs on the back of your neck, one of the people who knew it was being exploited, Bernardo Quintero, released a blog post detailing how it was being exploited -- after all, his company, VirusTotal, detects malware as a service. As Brian Krebs quotes in his post:</p>
+<blockquote>
+<p>“In short, an attacker can append a malicious JAR to a MSI file signed by a trusted software developer (like Microsoft Corporation, Google Inc. or any other well-known developer), and the resulting file can be renamed with the .jar extension and will have a valid signature according Microsoft Windows,” Quintero wrote.
+[...]
+“Microsoft has decided that it will not be fixing this issue in the current versions of Windows and agreed we are able to blog about this case and our findings publicly,” his blog post concluded.</p>
+</blockquote>
+<p>The exploit is called Glueball (Developers, take note, security researchers are better at naming than we are).</p>
+<p>But the over all part of this that burns my backside is that Microsoft <em>knew</em> and publicly <em>did nothing</em> about the exploit for two years. In fact, when asked the very question of &quot;Why the hell didn't you do something for two years?&quot; The representative from Microsoft answered (with temerity, I'm sure) &quot;Windows user who have applied the latest security updates are protected from this attack&quot;.</p>
+<blockquote>
+<p>“A security update was released in August,” Microsoft said in a written statement sent to KrebsOnSecurity. “Customers who apply the update, or have automatic updates enabled, will be protected. We continue to encourage customers to turn on automatic updates to help ensure they are protected.”</p>
+</blockquote>
+<p>I'm opining here, but I can't believe Microsoft would let such a risky exploit go for two years unless they were forced to.  I wouldn't be surprised if a nation-state actor was using that exploit and politely asked Microsoft not to patch it.</p>
+<p>Yes, that's an opinion, but that is slightly more plausible than Microsoft saying &quot;No big deal, let's wait two years to fix an already exploited security Vulnerability.</p>
+<p>We've seen Microsoft jump into action immediately on Zero-days; but this behavior from Mirosoft is just too weird to ignore.</p>
+<h3>C# 9 Natively Sized Integers</h3>
+<p><a href="https://anthonygiretti.com/2020/08/19/introducing-c-9-native-sized-integers/">Anthony Giretti blogs about forthcoming support for Natively Sized Integers in C# 9.</a></p>
+<p>For the subset of programmers that code that needs to worry about such a thing (if you have no idea what this is, then you're not one of them), then this is good news, and one less reason to have to dive into Interop.</p>
+<h3>Raymond chen talks about why you can't just hack off the GUID and use part of it for uniqueness</h3>
+<p>Don't lie, <a href="https://devblogs.microsoft.com/oldnewthing/20080627-00/?p=21823">you've thought about doing this before</a>.</p>
+<h3>The .NET team is busy adding nullable annotations to the BCL</h3>
+<p>Ok, this took some reading and I'm still not sure I fully undestand what's going on, but my simple response is starting in C# 8.0, you have the ability to tell the compiler that a certain reference is 'nullable', that is that it can be assigned null; through the ? operator: <code>string? myVar = null;</code>.    This tells other programmers that yes, a string can have a null value; (<a href="https://thedailywtf.com/articles/What_Is_Truth_0x3f_">Yes, No, FileNotFound</a>, anyone?); and helps to clearly express the situations where null is a good idea, and the situations where it's bad.  <a href="https://en.wikipedia.org/wiki/Tony_Hoare">Billion dollar mistake</a> bad.</p>
+<p>To lighten our loads, the .NET team has taken to adding <a href="https://github.com/dotnet/runtime/issues/2339#issuecomment-677921100">these nullable annotations to the .NET BCL</a>.  Presumably this will help static analysis tools not be such unsympathizing assholes all the time. Presumably.</p>
