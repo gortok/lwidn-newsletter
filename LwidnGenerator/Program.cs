@@ -16,7 +16,7 @@ namespace LwidnGenerator
 						.Factory
 						.CreateDefault(args)
 						.BuildPipeline("Render Markdown", builder => builder
-							.WithInputReadFiles("*.md")
+							.WithInputReadFiles("issues/*.md")
 							.WithProcessModules(new RenderMarkdown())
 							.WithOutputWriteFiles(".html"))
 						.RunAsync();
