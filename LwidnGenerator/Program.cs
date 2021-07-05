@@ -14,11 +14,7 @@ namespace LwidnGenerator
 				public static async Task<int> Main(string[] args) =>
 				await Bootstrapper
 						.Factory
-						.CreateDefault(args)
-						.BuildPipeline("Render Markdown", builder => builder
-							.WithInputReadFiles("issues/*.md")
-							.WithProcessModules(new RenderMarkdown())
-							.WithOutputWriteFiles(".html"))
+						.CreateWeb(args)
 						.RunAsync();
 		}
 }

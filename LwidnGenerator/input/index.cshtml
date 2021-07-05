@@ -1,6 +1,7 @@
 ﻿Order: 0
-ArchiveSources: "newsletter/*"
-ArchiveDestination: >= GetInt("Index") <= 1 ? "Title: Last Week in .NET
+ArchiveSources: "issues/*"
+ArchiveDestination: > 
+  => GetInt("Index") <= 1 ? "Title: Last Week in .NET"
 NoContainer: true
 ---
 <!DOCTYPE html>
