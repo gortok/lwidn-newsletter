@@ -1,1 +1,54 @@
-<h1>July 11, 2020 - Microsoft's Marketing Team Strikes Again</h1>
+<h3>Last Week In .NET (for the week ending July 11th, 2020)</h3>
+<p><a href="https://www.infoworld.com/article/3544632/microsoft-unveils-net-maui-for-cross-platform-apps.html">Microsoft released details about Maui</a> -- their codename for .NET 6.- .NET 6 is when Mono and .NET 5 aka .NET &quot;Core&quot; come together into a unified toolchain and platform, and they're calling it Maui. That's a bit on the nose, don't you think? Maui is the character from Moana that started, failed, stopped, started, failed, stopped, and started again and finally succeeded.</p>
+<p>Something that I'll end up writing a thousand times because naming is hard: .NET Core is now .NET 5; and .NET Framework and .NET 5 are different incompatible things. Somebody took the Java/JavaScript comparison a bit too far. In case you haven't heard that one, Java is to JavaScript like car is to carpet.</p>
+<p>.NET finally succeeding in bringing together Mono and .NET will be a win for everyone. If you want cross-platform Mobile Applications using .NET, you're currently stuck with Xamarin Forms and Mono. And since .NET game developers rely on Unity, and unity relies on Mono, I'll be happy to see them finally be able to move to .NET 5; since .NET Core (now .NET 5) is a lot faster than the old Framework and Mono.</p>
+<p>The big news here is Xamarin Forms will now be a first class citizen in .NET; and cross platform Forms will now be possible. This is huge, if I'm reading it right. XAML is back too. Shout out to everyone who learned XAML only to be crushed by the demise of Silverlight. Let's all pour one out for Silverlight.</p>
+<p><a href="https://www.linkedin.com/in/billwwagner/">Bill Wagner, a senior content developer for .NET at Microsoft</a> -- wait, did they get rid of Developer Advocates? Isn't a Senior Content Developer just a Developer advocate? Is nothing safe from Microsoft's Marketing team? Anyway, Bill sat down and spoke on the <no dogma /> podcast about... .NET 6 - Codename &quot;Maui&quot;.</p>
+<p>Speaking of .NET 5, <a href="https://github.com/dotnet/core/blob/master/release-notes/5.0/preview/5.0.0-preview.6.md">.NET Core 5 Preview 6 has been released</a>. I'm also incrementing the &quot;please move to calendar versioning&quot; counter. This release fixes a number of issues, <a href="https://github.com/dotnet/efcore/issues?q=is%3Aissue+milestone%3A5.0.0-preview6+is%3Aclosed+label%3Atype-bug+is%3Aclosed">especially in EFCore</a> and the <a href="https://github.com/dotnet/sdk/issues?q=is%3Aissue+is%3Aclosed+milestone%3A5.0.1xx+is%3Aclosed">.NET 5 SDK</a>.</p>
+<h3>F# updates</h3>
+<p>For the five people that use F#, Apparently <a href="https://devblogs.microsoft.com/dotnet/f-5-and-f-tools-update-for-june/">F# 5 Preview 6 is out</a>. I'd like to thank the marketing team at Microsoft for having at least one language on the same version number as the platform now. The two holdouts are, C# which is at Version 9, and VB.NET, <a href="https://en.wikipedia.org/wiki/Visual_Basic_.NET#2019_(VB_16.0)">which is sitting at Version 16</a> . (which also apparently supports .NET Core? I'll have to dive in and see what this is like).</p>
+<p>This makes me happy because F# has always felt... well.. ignored by Microsoft. Seeing them get updates for NET 5 is great. Thank you Microsoft!
+EFCore Updates</p>
+<p><a href="https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-efcore-5-0-preview-6/">Entity Framework Core version 5.0 Preview 6 is out</a>; and once again it feels like a few microsoft teams are all &quot;Let's pin to the platform version&quot;, and others are like &quot;screw that&quot;. #teamplatformversion .</p>
+<p>Anyway, from the blog post: This release includes split queries for related collections, a new “index” attribute, improved exceptions related to query translations, IP address mapping, exposing transaction id for correlation, and more.</p>
+<p>the interesting part to me is <a href="https://stackoverflow.com/a/36984733/16587">the 'index' attribute</a>. This support has been in Entity Framework 6.2, and is now also in EFCore as of version 5.0. <a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.schema.indexattribute?view=entity-framework-6.2.0">In Typical MSDN fashion the API's usage</a> is an exercise for the reader.</p>
+<p>In the &quot;This is scary but could be useful&quot; department, EF Core 5 Preview 6 also released <a href="https://github.com/dotnet/efcore/issues/20892">&quot;Split Queries&quot;</a> support which previously existed in Entity Framework 6. Split Queries will emit separate DataReaders to retrieve data using the .Include method. On the one hand it makes query optimization easier; on the other hand it introduces a lot of magic: When you see &quot;SplitQueryable&quot;, you now need to understand that you're hitting the database with separate queries. If you use Split Queries, let me know how you feel about them, but the DBA in me is nervous about consistency.
+.NET Foundation Board Member Elections</p>
+<p>The .NET Foundation nominations have concluded; and elections for Board Members are going to be held on July 21st. There are 6 board seats open.</p>
+<p>AND THE NOMINEES ARE (I've always wanted to say that):</p>
+<pre><code>Ben Adams
+Bill Wagner
+Dennie Declercq
+Dhananjay Kumar
+Huei Feng
+Jamie Howarth
+Javier Lozano
+Jay Harris
+Jeff Strauss
+Jeffrey Chilberto
+Jerome Hardaway
+Joseph Guadagno
+Layla Porter
+Mitchel Sellers
+Rainer Stropek
+Rodney Littles, II
+Rodrigo Diaz Concha
+Shawn Wildermuth
+</code></pre>
+<p>You can read about the nominees <a href="https://dotnetfoundation.org/about/election/candidates">here</a> and best of luck to everyone who doesn't know what they're getting into.</p>
+<h3>Stack Overflow Moderator Elections</h3>
+<p>Speaking of elections, Stack Overflow is holding elections for the first time after <a href="https://meta.stackexchange.com/q/333965/16587">37 moderators left the Stack Exchange Network</a> with 4 Moderators leaving Stack Overflow during the great Moderator exodus of 2019. That is a sordid story best told on its own. Over wine. Lots of wine. If you want me to go deeper into that story in a future podcast, post a five star review on apple podcasts, or if you're reading this newsletter in its email form, reply with the question &quot;how many times can a company shoot itself in the foot&quot;?</p>
+<p>Anyway,</p>
+<p>Nominations close on 00:00 UTC on Monday, July 13th which translates to 8pm Eastern Daylight Time on July 12th. (I think. Date math is hard. Also I apologize to my past projects and teams for advocating for the display of UTC time to every user in the application. Save your user's sanity by storing dates in UTC, and displaying them in local time).</p>
+<h3>WinGet / AppGet Debacle continues</h3>
+<p>Do you remember <a href="https://www.theverge.com/2020/5/28/21272964/microsoft-winget-windows-package-manager-appget-copied">the time when Microsoft loved Keivan's work on AppGet, invited him out to Microsoft for an interview, ghosted him, copied several architectural features of his project and then the night before Build called him to tell him that they were releasing a competitor to his .NET open source project they were calling &quot;WinGet&quot;</a>?</p>
+<p>No? Oh.</p>
+<p>Anyway, <a href="https://fossbytes.com/appget-developer-keivan-beigi-interview/">Keivan sat down to talk on FossBytes about AppGet and more</a>. That's spelled bytes, not bites. Again, naming is hard.</p>
+<p>I can appreciate the financial savvy exhibited here. Companies pay tens of thousands of dollars to someone who helped shave off months of development time. Microsoft got all that work for a steal. Typically this work pays well and is called consulting. But if you run an Open Source project, it's called &quot;Thanks for the free work and $*#&#64; you&quot;.</p>
+<p>Hang on, my fact checker is telling me Microsoft, apparently in exchange for the months of design direction Keivan helped them knock off and the hundreds of developer hours saved through his work, was credited in a Readme file on the WinGet project on <a href="https://github.com/microsoft/winget-cli/commit/ed545f996acd36e9b4b277949abc7f62e259ad68#diff-04c6e90faac2675aa89e2176d2eec7d8">June 3rd, 2020</a>.</p>
+<p>Way to go Microsoft.</p>
+<p>Keivan, Show that readme file to your landlord for 0% off of next month's rent!
+Pretty Fricking Cool Library Of the Week (PFCLotW)</p>
+<p>Have you heard of Polly? No, <a href="https://en.wikipedia.org/wiki/Along_Came_Polly">not Jennifer Aniston's character in that early 2000s hit romantic comedy</a>. I'm talking about <a href="https://github.com/App-vNext/Polly">the open source library</a>. Polly is meant to be used whenever you would make a network call to another service (internal or external). If you cross a network boundary, you want to wrap that call in something like Polly. You could, of course, re-invent the Circuit breaker pattern, but then you'd have to maintain it. Save electricity. Save the Earth. Use Polly instead. (This is not a sponsored ad. I just really like Polly).</p>
+<p>And that's what happened Last Week in .NET (technically the last 2 weeks, but July 4th was a holiday and nobody kept up with what happened the week before July 4th either). I'm George Stocker, and I help .NET Teams double their productivity. I won't tell you how though because you'll think I'm a member of the TDD Cult. I am not. But TDD can help your team save time, money, and result in a workday where you actually get to leave at 5pm. Visit <a href="https://www.doubleyourproductivity.io/">www.doubleyourproductivity.io</a> to learn more.</p>
+<p>If you liked this Newsletter, please forward it to your friends and ask them to subscribe at <a href="https://www.lastweekin.net/">www.lastweekin.net</a>. If you hated it, please forward it to your enemies.</p>
